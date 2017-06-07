@@ -1,0 +1,19 @@
+{
+  "name": "Simplr",
+  "description": "Open current chrome page in a simplified window without bookmarks.",
+  "main": "",
+  "authors": [
+    "Cody Lawson <delmarlawson@gmail.com>"
+  ],
+  "license": "Apache-2.0grun",
+  "homepage": "https://github.com/codylawson/simplr",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}

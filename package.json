@@ -1,0 +1,28 @@
+{
+  "name": "simplr",
+  "version": "0.1.0",
+  "description": "Open current chrome page in a simplified window without bookmarks.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codylawson/simplr.git"
+  },
+  "keywords": [],
+  "author": "Cody Lawson <delmarlawson@gmail.com>",
+  "license": "Apache-2.0grun",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-zip-directories": "^0.1.3",
+    "load-grunt-tasks": "^3.2.0"
+  },
+  "dependencies": {}
+}
