@@ -12,6 +12,14 @@ module.exports = function(grunt) {
     // Code Quality Tasks
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    uglify: {
+      dist: {
+        files: {
+          'simplr_extension/scripts/content.min.js': ['content.js']
+        }
+      }
+    },
+
     copy: {
       extension: {
         files: [{
@@ -20,12 +28,6 @@ module.exports = function(grunt) {
         }, {
           src: 'background.js',
           dest: 'simplr_extension/'
-        }, {
-          expand: true,
-          flatten: true,
-          filter: 'isFile',
-          src: 'bower_components/jquery/dist/jquery.min.js',
-          dest: 'simplr_extension/scripts/'
         }, {
           expand: true,
           flatten: true,
@@ -51,7 +53,7 @@ module.exports = function(grunt) {
   // Task Registration
 
   // Default task
-  grunt.registerTask('default', ['copy']);
+  grunt.registerTask('default', ['uglify', 'copy']);
   //Zip extension for chrome upload
   grunt.registerTask('extension', ['default', 'zip_directories']);
 };

@@ -4,7 +4,7 @@
   "name": "Simplr",
   "short_name": "Simplr",
   "description": "Open current chrome page in a simplified window without bookmarks.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Cody Lawson",
   "homepage_url": "https://github.com/codylawson/simplr",
 
@@ -16,6 +16,12 @@
     "scripts": ["background.js"],
     "persistent": false
   },
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["scripts/content.min.js"]
+  }],
+
   "browser_action": {
     "default_title": "Simplr Page"
   },
